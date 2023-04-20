@@ -54,6 +54,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'CustomFont8';
+    src: url('YesevaOne-Regular.ttf') format('truetype');
+    font-weight: 1000;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -146,6 +153,7 @@ p {
     width: 80%;
     margin: auto;
     padding: 50px;
+    font-family: CustomFont8;
 }
 
 section h2 {
