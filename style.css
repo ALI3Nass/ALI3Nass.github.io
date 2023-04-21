@@ -29,7 +29,7 @@
 @font-face {
     font-family: 'CustomFont4';
     src: url('RalewayDots-Regular.ttf') format('truetype');
-    font-weight: 700;
+    font-weight: 1000;
     font-style: normal;
 }
 
@@ -68,15 +68,15 @@
 }
 
 body {
-    background-color: #5b4aa3;
-    color: #fff;
-    font-family: CustomFont;
+    background-color: #8929a7;
+    color: #ffffff;
+    font-family: CustomFont8;
     font-size: 16px;
     line-height: 1.5;
 }
 
 header {
-    background-image: url('img/header-bg.jpg');
+    background-image: url('head.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -85,7 +85,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #222;
+    background-color: #131313;
 
 }
 
@@ -104,6 +104,7 @@ nav ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
+    font-size: larger;
 }
 
 nav ul li {
@@ -128,7 +129,7 @@ nav ul li a:hover {
 }
 
 p {
-    text-indent: 1em;
+    text-indent: 1.5em;
 }
 
 .hero-text {
@@ -153,7 +154,7 @@ p {
     width: 80%;
     margin: auto;
     padding: 50px;
-    font-family: CustomFont8;
+    
 }
 
 section h2 {
@@ -171,8 +172,14 @@ section p {
     font-weight: bolder;
 }
 
+#about {
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 50px;
+}
+
 #education {
-    background-color: #140f0f;
+    background-color: #131313;
     padding: 80px 0;
 }
 
@@ -244,6 +251,8 @@ section p {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    margin: 50px;
+    align-content: center;
     /* opacity: 0; */
 }
 
@@ -286,7 +295,7 @@ section p {
 }
 
 .project :hover {
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .project-title {
@@ -385,7 +394,7 @@ footer p {
     white-space: nowrap;
     margin: 0 auto;
     letter-spacing: 0.15em;
-    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    animation: typing 5.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
@@ -414,8 +423,9 @@ footer p {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 .icons a {
@@ -429,7 +439,7 @@ footer p {
     display: block;
     margin-top: 10px;
 }
-  
+
 .icons a:hover i {
     color: #ffffff;
 }
