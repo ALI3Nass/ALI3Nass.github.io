@@ -35,7 +35,7 @@
 
 @font-face {
     font-family: 'CustomFont5';
-    src: url('CormorantUpright-Medium.ttf') format('truetype');
+    src: url('Lato-Regular.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -68,7 +68,7 @@
 }
 
 body {
-    background-color: #8929a7;
+    background-color: #b02ed8;
     color: #ffffff;
     font-family: CustomFont8;
     font-size: 16px;
@@ -77,6 +77,7 @@ body {
 
 header {
     background-image: url('head.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -130,6 +131,7 @@ nav ul li a:hover {
 
 p {
     text-indent: 1.5em;
+    text-align: justify;
 }
 
 .hero-text {
@@ -170,12 +172,15 @@ section p {
     margin-bottom: 20px;
     font-family: CustomFont5;
     font-weight: bolder;
+    line-height: 1.5; 
+    word-spacing: 0.4em; 
+    font-size: 18px;
 }
 
 #about {
     margin-left: 15%;
     margin-right: 15%;
-    padding: 50px;
+    padding: 5%;
 }
 
 #education {
@@ -188,6 +193,8 @@ section p {
     position: relative;
     margin-top: 0;
     padding: 0;
+    margin-left: 10%;
+    margin-bottom: 10%
 }
 
 .timeline:before {
@@ -204,6 +211,7 @@ section p {
 .timeline li {
     margin-bottom: 50px;
     position: left;
+    
 }
 
 .timeline li:before {
@@ -315,6 +323,8 @@ section p {
 .skill-list {
     list-style: none;
     padding: 0;
+    align-items: normal;
+
 }
 
 .skill-list li {
@@ -323,17 +333,20 @@ section p {
 
 .skill-name {
     display: inline-block;
-    width: 250px;
-    font-weight: bolder;
+    margin-left: 3.5%;
+    padding-left: 3.5%;
+    width: 350px;
+    font-weight: medium;
     font-family: CustomFont7;
-    margin-bottom: 1%;
-    font-size: 1.6rem;
+    margin-bottom: 0.5%;
+    font-size: 2.6rem;
+    /* text-align: justify; */
 }
 
 .skill-bar {
-    margin-left: 9%;
+    margin-left: 10%;
     display: inline-block;
-    width: 350px;
+    width: 500px;
     height: 20px;
     background-color: #ddd;
     border-radius: 4px;
