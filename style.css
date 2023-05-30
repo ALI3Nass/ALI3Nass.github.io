@@ -68,7 +68,7 @@
 }
 
 body {
-    background-color: #b02ed8;
+    background-color: #aa0063;
     color: #ffffff;
     font-family: CustomFont8;
     font-size: 16px;
@@ -76,7 +76,7 @@ body {
 }
 
 header {
-    background-image: url('head.png');
+    background-image: url('head.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -86,8 +86,10 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #131313;
-
+    background-color: #131313b4;
+    /* background-image: blur(2px); */
+    background-blend-mode: multiply;
+    color: aliceblue;
 }
 
 nav {
@@ -99,6 +101,7 @@ nav {
     top: 0;
     left: 40;
     width: 100%;
+    
 }
 
 nav ul {
@@ -114,7 +117,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: crimson;
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease;
@@ -144,19 +147,21 @@ p {
     font-size: 5rem;
     font-weight: bold;
     margin-bottom: 20px;
-    text-shadow: 0px 0px 20px #ff1717fd;
+    text-shadow: 0px 0px 50px rgb(212, 0, 255);
 }
 
 .hero-text p {
-    font-size: 2rem;
-    text-shadow: 0px 0px 20px #ff0000;
+    font-size: 3rem;
+    font-display: bold;
+    text-shadow: 0px 0px 20px #000000;
 }
 
 .container {
     width: 80%;
     margin: auto;
-    padding: 50px;
-    
+    padding: left 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 section h2 {
@@ -164,7 +169,7 @@ section h2 {
     font-weight: bold;
     margin-bottom: 50px;
     text-align: center;
-    text-shadow: 0px 0px 45px #00ff15;
+    text-shadow: 0px 0px 55px #ff0000;
     font-family: CustomFont1;
 }
 
@@ -194,22 +199,24 @@ section p {
     margin-top: 0;
     padding: 0;
     margin-left: 10%;
-    margin-bottom: 10%
+    margin-bottom: 10%;
+    padding-left: 12%;
 }
 
 .timeline:before {
     content: "";
-    height: 103.3%;
+    height:103.9%;
     width: 3px;
     background-color: #007bff;
     position: absolute;
-    margin-left: -3px;
-    top: 1;
+    margin-left: -3px;    
+    grid-template-columns: repeat(5, 1fr);
+    top: 10px;
     z-index: 1;
 }
 
 .timeline li {
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     position: left;
     
 }
@@ -217,13 +224,14 @@ section p {
 .timeline li:before {
     content: "";
     position: left;
-    z-index: 2;
+    z-index: 5px;
     right: -14px;
-    top: 14px;
+    top: 1px;
     height: 0;
     width: 0;
-    border: 14px solid transparent;
+    border: 25px solid transparent;
     border-left-color: #007bff;
+    /* padding-bottom: 5%; */
 }
 
 .timeline-date {
@@ -238,7 +246,7 @@ section p {
 .timeline-content {
     display: inline-block;
     margin-left: 30px;
-    margin-top: 0;
+    margin-top: 0; 
 }
 
 .timeline-content h3 {
@@ -257,10 +265,11 @@ section p {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
     margin: 50px;
     align-content: center;
+
     /* opacity: 0; */
 }
 
@@ -272,19 +281,19 @@ section p {
     /* opacity: 0; */
 }
 
-.gallery img:hover {
+/* .gallery img:hover {
     transform: scale(4.4);
     opacity: 0;
-}
+} */
 
 .gallery img:hover {
-    transform: scale(2.4);
+    transform: scale(1.7);
     opacity: 1;
     /* transition: opacity 0.5s ease-out; */
 }
 
 .gallery:hover img:not(:hover) {
-    opacity: 0.2;
+    opacity: 0.1;
     /* transition: opacity 0.5s ease-out; */
 }
 
@@ -302,9 +311,9 @@ section p {
     position: relative;
 }
 
-.project :hover {
+/* .project :hover {
     transform: scale(1.1)
-}
+} */
 
 .project-title {
     position: absolute;
@@ -319,7 +328,6 @@ section p {
     margin: 0;
     border-radius: 5px;
 }
-
 .skill-list {
     list-style: none;
     padding: 0;
@@ -356,10 +364,14 @@ section p {
 .skill-progress {
     display: inline-block;
     height: 100%;
-    background-color: #006ab1;
+    background-color: #aa0063;
     transition: width 1s ease-in-out;
 }
 
+.skill-progress:hover {
+    background-color: #ff0000;
+
+}
 .skill-100 {
     width: 100%;
 }
@@ -455,4 +467,8 @@ footer p {
 
 .icons a:hover i {
     color: #ffffff;
+}
+
+.text-shadow {
+    text-shadow: 0px 0px 30px #11e5ec;
 }
