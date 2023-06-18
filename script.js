@@ -1,4 +1,4 @@
-// Function to animate the navigation bar on scroll
+/*Function to animate the navigation bar on scroll
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -41,3 +41,16 @@ form.addEventListener('submit', (event) => {
 		form.reset();
 	}
 });
+*/
+
+function showNotification() {
+	var notification = document.getElementById('notification');
+	notification.style.display = 'block';
+	setTimeout(function() {
+	  notification.style.display = 'none';
+	}, 5000); // 5000 milliseconds = 5 seconds
+  }
+  
+  // Call the showNotification function when your page loads or whenever you want to show the notification
+  showNotification();
+  
