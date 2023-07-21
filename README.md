@@ -8,13 +8,13 @@ This is my personal portfolio website, where you can find information about me, 
 * JavaScript
 
 ## Live Demo
-You can check out the live version of the website [here](https://astrophile481.github.io).
+You can check out the live version of the website [here](https://ALI3Nass.github.io).
 
 ## Getting Started
 If you want to clone the repository and run the website locally, follow these steps:
 
-* Clone the repository:  git clone https://github.com/astrophile481/astrophile481.github.io
-* cd astrophile481.github.io
+* Clone the repository:  git clone https://github.com/ALI3Nass/ALI3Nass.github.io
+* cd ALI3Nass.github.io
 * xdg-open index.html
 
 ## License
