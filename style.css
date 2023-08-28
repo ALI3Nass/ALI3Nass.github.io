@@ -68,7 +68,7 @@
 }
 
 body {
-    background-color: #aa0063;
+    background-color: #000000;
     color: #ffffff;
     font-family: CustomFont8;
     font-size: 16px;
@@ -134,7 +134,7 @@ nav ul li a:hover {
 
 p {
     text-indent: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 .hero-text {
@@ -183,31 +183,49 @@ section p {
 }
 
 #about {
-    margin-left: 15%;
+    margin-left: 23%;
     margin-right: 15%;
     padding: 5%;
 }
 
 #education {
-    background-color: #131313;
     padding: 80px 0;
+    background-image: url('Polish_20221028_215638242.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #131313b4;
+    /* background-image: blur(2px); */
+    background-blend-mode: multiply;
+    color: aliceblue;
 }
 
+.about2 {
+    background-image: url('1 - MTOimIx.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #131313b4;
+    /* background-image: blur(2px); */
+    background-blend-mode: multiply;
+    color: aliceblue;
+    
+}
 .timeline {
     list-style-type: none;
     position: relative;
     margin-top: 0;
     padding: 0;
-    margin-left: 10%;
+    margin-left: 7%;
     margin-bottom: 10%;
-    padding-left: 12%;
+    padding-left: 9%;
 }
 
 .timeline:before {
     content: "";
     height:103.9%;
     width: 3px;
-    background-color: #007bff;
+    background-color: cadetblue;
     position: absolute;
     margin-left: -3px;    
     grid-template-columns: repeat(5, 1fr);
@@ -230,7 +248,7 @@ section p {
     height: 0;
     width: 0;
     border: 25px solid transparent;
-    border-left-color: #007bff;
+    border-left-color: cadetblue;
     /* padding-bottom: 5%; */
 }
 
@@ -239,7 +257,7 @@ section p {
     width: 120px;
     font-weight: 700;
     margin-bottom: 0px;
-    color: #007bff;
+    color: cadetblue;
     font-family: CustomFont6;
 }
 
@@ -265,7 +283,7 @@ section p {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 40px;
     margin: 50px;
     align-content: center;
@@ -287,20 +305,19 @@ section p {
 } */
 
 .gallery img:hover {
-    transform: scale(1.7);
+    transform: scale(3);
     opacity: 1;
     /* transition: opacity 0.5s ease-out; */
 }
 
 .gallery:hover img:not(:hover) {
-    opacity: 0.1;
+    opacity: 1;
     /* transition: opacity 0.5s ease-out; */
 }
 
-.gallery:hover h2:not(:hover) {
-    opacity: 0;
-    /* transition: opacity 0.5s ease-out; */
-}
+/* .gallery:hover h2:not(:hover) {
+    opacity: 1;
+    /* transition: opacity 0.5s ease-out; } */
 
 .gallery:hover p:not(:hover) {
     opacity: 0;
@@ -308,7 +325,7 @@ section p {
 }
 
 .project {
-    position: relative;
+    position: static;
 }
 
 /* .project :hover {
@@ -320,25 +337,35 @@ section p {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    font-size: 13px;
+    background-color: rgba(19, 131, 131, 0.671);
+    color: #ffffff;
+    font-size: 12px;
     text-align: center;
     padding: 10px;
     margin: 0;
     border-radius: 5px;
+}
+
+.services {
+    background-image:url('wp7782542-warzone-ghost-wallpapers.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #131313b4;
+    /* background-image: blur(2px); */
+    background-blend-mode: multiply;
 }
 .skill-list {
     list-style: none;
     padding: 0;
     align-items: normal;
     margin-bottom: 5%;
-
 }
 
 .skill-list li {
     margin-bottom: 20px;
 }
+
 
 .skill-name {
     display: inline-block;
@@ -365,12 +392,12 @@ section p {
 .skill-progress {
     display: inline-block;
     height: 100%;
-    background-color: #aa0063;
+    background-color: cadetblue;
     transition: width 1s ease-in-out;
 }
 
 .skill-progress:hover {
-    background-color: #ff0000;
+    background-color: #00fff27e;
 
 }
 .skill-100 {
@@ -402,15 +429,22 @@ section p {
 }
 
 footer {
-    background-color: #222;
+    /* background-color: #222; */
     padding: 20px;
     text-align: center;
     margin-top: 50px;
+    background-image:url('alien_twitter_banner_by_skyhaishai_db5serp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #131313b4;
+    /* background-image: blur(2px); */
+    background-blend-mode: multiply;
 }
 
 footer p {
     font-size: 1.2rem;
-    text-shadow: 0px 0px 10px #3dfc9c;
+    text-shadow: 0px 0px 20px #3dfc9c;
     font-family: CustomFont2;
 }
 
@@ -457,7 +491,7 @@ footer p {
 .icons a {
     margin: 0 15px;
     font-size: 3.5em;
-    color: #392e6d;
+    color: #2e5b6d;
     transition: color 0.3s;
 }
 
