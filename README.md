@@ -1,49 +1,53 @@
-# astrophile481.github.io
-## My Portfolio Website
-This is my personal portfolio website, where you can find information about me, my education, skills, and projects.
+# 👽 ali3nass.github.io
 
-## Technologies Used
-* HTML
-* CSS
-* JavaScript
+> **AI Engineer · Embedded Systems · LLMs · Control Engineering**  
+> Personal portfolio of M. Awais Maqbool — built from scratch, no frameworks, no fluff.
 
-## Live Demo
-You can check out the live version of the website [here](https://ALI3Nass.github.io).
+&nbsp;
 
-## Getting Started
-If you want to clone the repository and run the website locally, follow these steps:
+**[→ Live Site](https://ALI3Nass.github.io)**
 
-* Clone the repository:  git clone https://github.com/ALI3Nass/ALI3Nass.github.io
-* cd ALI3Nass.github.io
-* xdg-open index.html
+---
+
+## What's inside
+
+A single-page portfolio covering who I am, what I build, and how to reach me.
+
+| Section | What you'll find |
+|---|---|
+| Hero | Animated dot grid, name, tagline |
+| About | Background, stats, current status |
+| Projects | AGRIS, RAG Agent, DeepSeek Chatbot, Sketch Drawing Gadget |
+| Skills | ML/AI, Embedded, Web, Systems, Soft Skills |
+| Education | BS AI · ADP · FSc timeline |
+| Certifications | AI/ML · Computing & Cybersecurity · Other |
+| Awards | Dean's List, PHEC tuition, PM laptop, AI Expo 1st place |
+| Contact | Email + socials |
+
+---
+
+## Built with
+
+- **HTML / CSS / JS** — zero dependencies, zero build step
+- **Canvas API** — interactive dot grid that reacts to your cursor
+- **Custom cursor** — dot + lagging ring, blend mode multiply
+- **IntersectionObserver** — staggered scroll reveal on every section
+- **Parallax** — hero drifts on scroll, section labels shift for depth
+- **3D card tilt** — perspective tilt on project, stat, and award cards
+- **Space Grotesk + Inter** via Google Fonts
+
+---
+
+## Run locally
+
+```bash
+git clone https://github.com/ALI3Nass/ALI3Nass.github.io
+cd ALI3Nass.github.io
+# just open index.html in your browser — no server needed
+```
+
+---
 
 ## License
-This project is licensed under the MIT License.
 
-## Acknowledgments
-This website was created from scratch by AlienAss using HTML, CSS, and JavaScript. It is a personal project to showcase my skills and experience in web development.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+MIT — use it, remix it, ship it. Go ahead.
